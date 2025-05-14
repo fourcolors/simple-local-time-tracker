@@ -1,0 +1,30 @@
+{
+  "tasks": {
+    "dev": "deno run -A bundle.ts",
+    "build": "deno run -A build.ts",
+    "cli": "deno run -A src/cli.ts",
+    "test": "deno test src/",
+    "lint": "deno lint src/"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  },
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "std/": "https://deno.land/std@0.224.0/",
+    "cliffy/": "https://deno.land/x/cliffy@v1.0.0-rc.3/"
+  },
+  "lint": {
+    "include": ["src/"],
+    "exclude": ["node_modules/", "dist/", "www/dist/"]
+  },
+  "fmt": {
+    "include": ["src/"],
+    "exclude": ["node_modules/", "dist/", "www/dist/"],
+    "indentWidth": 2,
+    "semiColons": true
+  }
+}
