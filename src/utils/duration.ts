@@ -1,3 +1,5 @@
+// duration.ts - Deno compatible
+
 /**
  * Formats a duration in milliseconds to a human-readable string
  * @param ms Duration in milliseconds

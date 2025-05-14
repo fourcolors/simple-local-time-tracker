@@ -1,27 +1,12 @@
 #!/usr/bin/env -S deno run -A
 import { Command } from "cliffy/command/mod.ts";
-// These would need to be converted to use Deno imports
-// import { startTask } from './commands/start.ts';
-// import { stopCurrentTask } from './commands/stop.ts';
-// import { generateDailyReport } from './commands/report.ts';
-// import { initStorage } from './utils/storage.ts';
+import { initStorage } from "./utils/storage.ts";
 
-// Mock functions for example (would be replaced with actual implementations)
-async function startTask() {
-  console.log("Starting task...");
-}
-
-function stopCurrentTask() {
-  console.log("Stopping current task...");
-}
-
-function generateDailyReport(date: Date) {
-  console.log(`Generating report for ${date.toISOString().split("T")[0]}...`);
-}
-
-function initStorage() {
-  console.log("Initializing storage...");
-}
+// Import command handlers
+// Note: These would need to be updated to use Deno imports
+import { startTask } from "./commands/start.ts";
+import { stopCurrentTask } from "./commands/stop.ts";
+import { generateDailyReport } from "./commands/report.ts";
 
 // Initialize storage
 initStorage();

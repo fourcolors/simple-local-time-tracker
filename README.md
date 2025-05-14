@@ -12,8 +12,8 @@ A desktop time tracking application built with Tauri, Deno, React, and TypeScrip
 
 ## Tech Stack
 
-- **Tauri**: Cross-platform desktop application framework (v2.0.0)
-- **Deno**: JavaScript/TypeScript runtime
+- **Tauri**: Cross-platform desktop application framework (v2.0.0 - May 2025)
+- **Deno**: JavaScript/TypeScript runtime (v2.3.0 - May 2025)
 - **React**: UI library (v19.0.0)
 - **TypeScript**: Type-safe JavaScript
 - **esbuild**: Fast JavaScript bundler (v0.25.4)
@@ -88,9 +88,10 @@ deno task cli report
 
 ## Dependencies
 
-- Tauri 2.0.0
+- Tauri 2.0.0 (May 2025)
 - React 19.0.0
 - esbuild 0.25.4
+- Deno 2.3.0 (May 2025)
 - Deno standard library 0.224.0
 - TypeScript
 

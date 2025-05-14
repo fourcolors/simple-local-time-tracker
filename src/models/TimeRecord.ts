@@ -1,3 +1,4 @@
+// TimeRecord.ts - Deno compatible
 export interface TimeRecord {
   id: string;
   taskName: string;
